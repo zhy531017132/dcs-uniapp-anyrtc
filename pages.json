@@ -1,0 +1,66 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "DCS 文档预览"
+			}
+		}, {
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "产品示例"
+			}
+		}, {
+			"path": "pages/reader/reader",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/broadcast/broadcast",
+			"style": {
+				"navigationBarTitleText": "直播",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/iconfont/document.png",
+				"selectedIconPath": "static/iconfont/documentSelect.png",
+				"text": "文档"
+			}, {
+				"pagePath": "pages/broadcast/broadcast",
+				"iconPath": "static/iconfont/broadcast.png",
+				"selectedIconPath": "static/iconfont/broadcastSelect.png",
+				"text": "直播"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"iconPath": "static/iconfont/me.png",
+				"selectedIconPath": "static/iconfont/meSelect.png",
+				"text": "产品示例"
+			}
+		],
+		"color": "#C0C0C0",
+		"selectedColor": "#333333",
+		"backgroundColor": "#FFFFFF"
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

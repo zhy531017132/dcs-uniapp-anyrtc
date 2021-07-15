@@ -1,0 +1,1 @@
+<view class="content"><button type="default" data-event-opts="{{[['tap',[['uploadFile',['$event']]]]]}}" bindtap="__e">上传文件</button></view>

@@ -1,0 +1,35 @@
+.banner {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 16px;
+  background-color: #52575c;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.github {
+  width: 30px;
+  height: 30px;
+}
+
+.banner-text {
+  margin: 0;
+}
+
+.card.demo-card {
+  margin-bottom: 15px;
+  flex: 0 0 300px;
+}
+
+.demo-card-btn {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.card-text {
+  margin-bottom: 50px;
+}
